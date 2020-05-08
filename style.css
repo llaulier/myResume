@@ -34,11 +34,11 @@ ul {
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas:
-    "aside aside header header"
-    "aside aside section section "
-    "aside aside section section "
-    "aside aside section section "
-    "aside aside section section ";
+    "aside header header"
+    "aside section section "
+    "aside section section "
+    "aside section section "
+    "aside section section ";
 }
 
 aside,
@@ -108,18 +108,12 @@ nav ul li img {
 nav ul li:hover img {
   opacity: 1;
 }
-/*nav ul li:nth-child(2) {
-  cursor: default;
-}
-nav ul li:not(:nth-child(2)) {
-  color: #d6d6d6;
-}*/
 
-.contact {
+.social {
   margin-top: 30%;
   padding: 0 1em;
-  display: grid;
-  grid-template-columns: 30px 1fr;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   color: #d6d6d6;
   font-size: 0.7rem;
@@ -129,17 +123,18 @@ nav ul li:not(:nth-child(2)) {
   cursor: pointer;
   transition: 0.2s;
 }
-.contact:hover span {
-  color: #ffffff;
+
+.social img {
+  width: 38px;
+  height: 38px;
+  opacity: 0.7;
 }
 
-.contact:hover img {
+.social img:hover {
   opacity: 1;
 }
-.contact img {
-  width: 18px;
-  height: 18px;
-  opacity: 0.7;
+.social a {
+  margin: 7px;
 }
 
 main {
@@ -155,9 +150,12 @@ header {
 }
 section h4 {
   font-size: 1.2rem;
-  font-weight: normal;
+  font-weight: large;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6a21ee;
   grid-column: 1 / -1;
-  margin-bottom: 20px;
 }
 section p {
   font-size: 0.7rem;
@@ -169,7 +167,7 @@ section p:nth-child(2) {
   color: #9b9b9b;
 }
 section p:nth-child(3) {
-  color: #e56586;
+  color: #6a21ee;
   justify-self: end;
   cursor: pointer;
 }
@@ -179,7 +177,7 @@ section p:nth-child(3):hover {
 
 section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: 2fr;
   grid-auto-rows: 1fr;
   grid-gap: 1em;
   grid-auto-flow: dense;
@@ -206,7 +204,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: bold;
-  color: #e56586;
+  color: #6a21ee;
 }
 .card__country {
   color: #9b9b9b;
@@ -224,7 +222,8 @@ section {
     justify-items: center;
   }
   img {
-    width: 10vw;
+    width: 24px;
+    height: 24px;
   }
 
   nav {
@@ -238,12 +237,11 @@ section {
     margin-bottom: 10px;
   }
 
-  .contact {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 0;
+  .social {
+    flex-flow: column wrap;
   }
-  .contact img {
+
+  .social img {
     margin-bottom: 10px;
   }
 }
@@ -273,11 +271,8 @@ section {
     display: none;
   }
 
-  .contact img {
+  .social img {
     width: 24px;
     height: 24px;
-  }
-  .contact span {
-    display: none;
   }
 }
