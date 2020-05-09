@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
+    <link  rel="icon" href="./images/Avatar.ico"/>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@469&family=Roboto&display=swap" rel="stylesheet">
   </head>
   <title>Liora Laulier</title>
@@ -18,7 +19,7 @@
           alt="My Pic"
         />
       <div class="menu__info">
-        <h4>Lille</h4>
+        <h4><img src="./images/maps-and-flags.png" alt="my position" />Lille</h4>
         <p>FRANCE</p>
       </div>
     </div>
@@ -36,10 +37,6 @@
           <img src="images/mortarboard.png" alt="education">
           <span id="education">Formation</span>
         </li>
-        <li id="being">
-          <img src="images/like.png" alt="education">
-          <span>Savoir-être</span>
-        </li>
         <li id="heart">
           <img src="./images/heart.png" alt="hoobies"/>
           <span>Centres d'intérêt</span>
@@ -51,7 +48,7 @@
       </ul>
     </nav>
     <div class="social">
-      <a href=""><img src="./images/github.png" alt="hoobies"/></a>
+      <a href="https://github.com/llaulier"><img src="./images/github.png" alt="hoobies"/></a>
       <a href=""><img src="./images/github.png" alt="linkedin"/></a>
     </div>
   </aside>
@@ -62,12 +59,52 @@
       <p>Développeuse Web Junior JavaScript - React - Node.js</p>
     </header>
 
+    <section>
+      <div class="card">
+      <p class="card__article">En reconversion professionnelle pour devenir développeuse Web, je suis formée à la Wild Code School de Lille. Je suis à la recherche d'un stage à partir d'août 2020. 
+      </p>
+    </section>
+
     <section id="skill">
       <h4>Mes Compétences</h4>
-      <div class="wrap"></div>
       <div class="card">
-        <p class="card__name">Carrie Burton</p>
-        <p class="card__country">New Zealand</p>
+        <h5 class="card__name">Hard Skills</h5>
+          <p class="card__title"> Langages que je maîtrise :</p>
+          <ul class="card__article">
+            <li>HTML, CSS, Javascript (NodeJs, React)</li>
+            <p class="card__title"> Outils de développement :</p>
+            <ul class="card__article">
+              <li>Visual Code Studio</li>
+              <li>Git, GitHub</li>
+              <li>Terminal</li>
+          </ul>
+            <p class="card__title">Méthode</p>
+            <ul class="card__article">
+            <li>Scrum</li></ul>
+            <p class="card__title">Design et maquettes</p>
+            <ul class="card__article">
+              <li>Adobe Photoshop/ Illustrator</li>
+              <li>Figma</li>
+              <li>Gimp</li>
+          </ul>
+        <h5 class="card__name">Soft Skills</h5>  
+          <ul class="card__article">
+            <li>Organisée</li>
+              <li>Autodidacte</li>
+              <li>Rigoureuse</li>
+              <li>Polyvalente</li>
+              <li>Curieuse</li>
+              <li>Aime le travail en équipe</li>
+              <li>Persévérante</li>
+          </ul>
+      </div>
+    </section>
+
+    <section id="xp">
+      <h4>Expérience</h4>
+      <div class="card">
+        <p class="card__name_xp">Chargée de communication</p>
+        <p class="card__compagny">Bibliothèque Universitaire Vauban</p>
         <p class="card__article">
           New CSS properties min(), max(), and clamp()
         </p>
@@ -83,7 +120,6 @@
         <p class="card__article">
           Different Approaches to Responsive CSS Motion Path
         </p>
-      </div>
       </div>
     </section>
   </main>
