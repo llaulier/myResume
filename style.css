@@ -259,6 +259,9 @@ section p {
   nav ul li img {
     margin-bottom: 10px;
   }
+  nav ul li span {
+    display: none;
+  }
 
   .social {
     flex-direction: column;
@@ -269,7 +272,7 @@ section p {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 680px) {
+@media (max-width: 780px) {
   .container {
     grid-template-columns: 16% 1fr;
   }
