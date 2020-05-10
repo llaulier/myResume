@@ -11,11 +11,13 @@ body {
   display: grid;
   place-items: center;
   color: #232323;
+  letter-spacing: 2px;
 }
 
 h1 {
   font-size: 3rem;
   font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
 }
 
 a {
@@ -45,43 +47,43 @@ aside {
 
 .menu {
   display: grid;
-  grid-template-columns: 40% 1fr;
-  align-items: center;
+  grid-template-columns: 1fr;
+  grid-row: 3fr;
+  justify-items: center;
 }
 .menu img {
   border-radius: 50%;
 }
-
 .menu__info {
-  justify-self: end;
-  grid-row: 2;
+  margin: 0.6em;
 }
 
 .menu__info h4 {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: normal;
-  letter-spacing: 1px;
-  margin-bottom: 7px;
-}
-.menu__info p {
-  font-size: 0.7rem;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.menu__info img {
-  width: 20px;
-  height: 20px;
+  margin-bottom: 7px;
+  color: #d6d6d6;
 }
 
-nav {
-  font-size: 0.7rem;
+.menu__info img {
+  width: 17px;
+  height: 17px;
+  opacity: 0.7;
+  margin: 1px;
+}
+
+nav,
+footer {
+  font-size: 0.8rem;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: bold;
   padding: 0 1em;
   margin-top: 20%;
+}
+nav a {
+  color: #d6d6d6;
 }
 nav ul li {
   display: grid;
@@ -117,7 +119,6 @@ nav ul li:hover img {
   align-items: center;
   color: #d6d6d6;
   font-size: 0.7rem;
-  letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
@@ -155,6 +156,7 @@ header p {
   padding: 1em 0;
   font-size: 1.3rem;
   font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
 }
 
 section {
@@ -168,7 +170,6 @@ section {
 section h4 {
   font-size: 1rem;
   font-weight: large;
-  letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: bold;
   color: #6a21ee;
@@ -177,6 +178,13 @@ section h4 {
 
 section p {
   font-weight: lighter;
+  letter-spacing: 1.2px;
+}
+
+aside footer {
+  color: #d6d6d6;
+  font-size: 0.4rem;
+  text-align: center;
 }
 
 .card {
@@ -190,50 +198,31 @@ section p {
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 .card__name {
-  letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: large;
   color: #ed9839;
-  padding: 1.3rem;
+  padding-bottom: 1.3rem;
 }
 
 .card__title {
   color: #6a21ee;
-  padding: 0.4rem;
+  padding: 0.3rem;
+  letter-spacing: 1.2px;
 }
 
-.card__article li {
+.card__article li,
+p {
   color: #232322;
   list-style: none;
-  letter-spacing: 2px;
+  letter-spacing: 1.2px;
   font-size: 0.9rem;
   padding: 0.3rem;
+  list-style: inside url("./images/right-arrow.png");
 }
 
 .card__compagny {
   color: #9b9b9b;
-  letter-spacing: 2px;
   font-size: 0.8rem;
   margin: 5px 0 20px;
-}
-
-.card__name_xp {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: large;
-  color: #ed9839;
-  padding: 1.3rem;
-}
-.card__name_xp:before {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #ed9839;
-  position: absolute;
-  margin-left: -26px;
-  margin-top: 6px;
 }
 
 @media (max-width: 880px) {
@@ -251,6 +240,7 @@ section p {
   }
   nav {
     padding: 0;
+    position: sticky;
   }
   nav ul li {
     grid-template-columns: 1fr;
@@ -260,6 +250,10 @@ section p {
     margin-bottom: 10px;
   }
   nav ul li span {
+    display: none;
+  }
+
+  aside footer {
     display: none;
   }
 
