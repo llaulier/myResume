@@ -73,9 +73,13 @@ aside {
   margin: 1px;
 }
 
+#navbar {
+  position: sticky;
+  top: 0;
+}
 nav,
 footer {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
@@ -200,7 +204,7 @@ aside footer {
 .card__name {
   text-transform: uppercase;
   color: #ed9839;
-  padding-bottom: 1.3rem;
+  padding-bottom: 0.8rem;
 }
 
 .card__title {
@@ -222,7 +226,7 @@ p {
 .card__compagny {
   color: #9b9b9b;
   font-size: 0.8rem;
-  margin: 5px 0 20px;
+  margin-bottom: 0.4rem;
 }
 
 @media (max-width: 880px) {
