@@ -10,14 +10,47 @@
   <title>Liora Laulier</title>
 </head>
 <body>
-
+  <!--popup-->
+<div class="popup" id="pop">
+  <div class="popup__contain">
+    <div class="popup__Wrap">
+    <div class="contact__Me_col1">
+      <h5 class="card__name">Contactez-moi via ce formulaire</h5>
+      <form action="contact.php" method="post" class="form">
+        <div class="form">
+          <label for="name">Votre nom</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form">
+          <label for="email">Votre mail </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form">
+          <label for="text"></label>
+          <textarea type="text" name="text" id="text"></textarea>
+        </div>
+        <div class="form">
+          <input type="submit" value="Envoyer">
+        </div>
+      </form>
+    </div>
+      <div class="contact__Me_col2">
+        <h5 class="card__name">...ou via mes coordonnées</h5>
+        <p class="card__compagny">06.25.68.09.33</p>
+        <p class="card__compagny">lioraloche@yahoo.fr</p>
+      </div>
+      <a href="#" class="close">x</a>
+    </div>
+  </div>
+</div>
+<!--contain-->
 <div class="container">
   <aside>
     <div class="menu">
         <img
           src="https://media-exp1.licdn.com/dms/image/C4E03AQHgKaLf34VqVg/profile-displayphoto-shrink_200_200/0?e=1594252800&v=beta&t=p4sXfGehISolWyrVKUqd7bzUMinCwajiephHNjVcCIE"
           alt="My Pic"
-        />     
+        />
       <div class="menu__info">
         <h4><img src="./images/maps-and-flags.png" alt="my position" />Lille, France</h4>
       </div>
@@ -34,17 +67,23 @@
           <span>Expérience</span>
         </li></a>
         <a href="#education"><li>
-          <img src="images/mortarboard.png" alt="education">
+          <img src="images/mortarboard.png" alt="education"/>
           <span>Formation</span>
+        </li></a>
+        <a href="#portfolio"><li>
+          <img src="images/suitcase.png" alt="portfolio"/>
+          <span>Portfolio</span>
         </li></a>
         <a href="#hobbies"><li id="heart">
           <img src="./images/heart.png" alt="hoobies"/>
           <span>Centres d'intérêt</span>
         </li></a>
-        <a href="mailto:lioraloche@yahoo.fr"></a><li>
+        <div class="openPopup">
+          <li>
           <img src="./images/message.png" alt="hoobies"/>
           <span>Contactez-moi</span>
-        </li></a>
+          </li>
+        </div>
       </ul>
     </nav>
     <div class="social">
@@ -56,8 +95,7 @@
       Icons with Freepik
     </footer>
   </div>
-  </aside>
-
+</aside>
   <main>
     <header>
       <h1>Liora Laulier</h1>
@@ -66,7 +104,7 @@
 
     <section>
       <div class="card">
-      <p class="card__article">En reconversion professionnelle, je suis actuellement en formation à la Wild Code School et à la recherche d'un stage pour le mois d'août 2020.  
+      <p class="card__article">En reconversion professionnelle, je suis actuellement en formation à la Wild Code School et à la recherche d'un stage pour le mois d'août 2020.
       </p>
     </section>
 
@@ -80,11 +118,12 @@
             <p class="card__title"> Back-end</p>
           <ul class="card__article">
             <li>NodeJs, NPM</li></ul>
-            <p class="card__title"> Outils de développement :</p>
+            <p class="card__title"> Environnement de développement :</p>
             <ul class="card__article">
               <li>Visual Code Studio, Atom</li>
               <li>GIT, GitHub</li>
               <li>Terminal</li>
+              <li>MacbookPro</li>
           </ul>
             <p class="card__title">Méthode :</p>
             <ul class="card__article">
@@ -94,9 +133,10 @@
               <li>Adobe Photoshop / Illustrator</li>
               <li>Figma</li>
               <li>Gimp</li>
+              <li>Material UI</li>
         </div>
         <div class="card">
-          <h5 class="card__name">Soft Skills</h5>  
+          <h5 class="card__name">Soft Skills</h5>
             <ul class="card__article">
               <li>Organisée</li>
                 <li>Autodidacte</li>
@@ -114,8 +154,6 @@
       <ul class="card__article"><ul>
         <li>
           Pratique professionnelle B2</li></ul>
-        <p class="card__title">Espagnol :</p>
-        <li>Pratique occasionnelle A1</li>
       </ul>
       </div>
     </section>
@@ -124,15 +162,48 @@
       <h4>Expérience</h4>
       <div class="card">
         <p class="card__name">Projet site professionnel <i>V'Lille App</i></p>
-        <p class="card__compagny">Avril 2020</p>
-        <p class="card__article">Réalisation d'une web app pour connaître les positions des vélos mis à disposition par la mairie de Lille (V'Lille).</p>
+        <p class="card__compagny">Avril 2020 </p>
+        <p class="card__article">Réalisation d'une web app pour connaître les stations V'Lille (Vélos mis à disposition par la mairie de Lille) à proximité d'une position.</p>
+        <ul class="card__article">
+          <li>Appel d'API</li>
+          <li>React</li>
+          <li>Map Leaflet</li>
+          <li>Figma</li>
+          <li>Material UI</li>
+          <li>Trello</li>
+          <li>Git et Github</li>
+          <li>Polypane (Browser)</li>
+          <li>Méthode Scrum avec 4 sprints</li>
+        </ul>
+      </div>
+      <div class="card_website">
+        <div class="button__website">
+          <a href="https://vlilleapp.netlify.app/" target="_blank">
+            <img  class="website__container" src="./images/VLille.png" alt="Aperçu du Site YellowGreen"/>
+        </a>
+        </div>
       </div>
       <div class="card">
         <p class="card__name">Projet site professionnel <i>Yellowgreen</i></p>
         <p class="card__compagny">Mars 2020</p>
-        <p class="card__article">Réalisation d'un site internet SPA pour une agence de communication.
+        <p class="card__article">Réalisation d'un site internet SPA pour une agence de communication.</p>
+        <ul class="card__article">
+          <li>HTML 5, CSS 3</li>
+          <li>Media queries</li>
+          <li>Javascript et manipulation du DOM</li>
+          <li>Mockup</li>
+          <li>Trello</li>
+          <li>Méthode agile avec 1 checkpoint chaque matin</li>
+          <li>Git et Github</li>
+        </ul>
       </div>
-      <div class="card__websiter"><img class="website__container" src="./images/YellowGreen.png" alt="Aperçu du Site YellowGreen"/><a href="https://zealous-bohr-ebe0a6.netlify.app" target="_blank"></a></div>
+      <div class="card_website">
+        <div class="button__website">
+          <a href="https://yellowgreen.netlify.app" target="_blank">
+            <img  class="website__container" src="./images/YellowGreen.png" alt="Aperçu du Site YellowGreen"/>
+        </a>
+        </div>
+      </div>
       <div class="card">
         <p class="card__name">Chargée de communication</p>
         <p class="card__compagny">2015-2019 Bibliothèque Universitaire Vauban</p>
@@ -169,7 +240,8 @@
         <p class="card__name">Wild Code School</p>
         <p class="card__compagny">Mars-juillet 2020</p>
         <p class="card__article">
-          Apprentissage du HTML, CSS, Javascript, Node Js et React en présentiel puis entièrement en remote (Période de confinement)
+           Consolidation des connaissances HTML, CSS,
+           Apprentissage de Javascript, Node Js et React en présentiel puis entièrement en remote (Période de confinement)
         </p>
       </div>
       <div class="card">
@@ -192,14 +264,20 @@
         <p class="card__article">
           Licence de Lettres Modernes – Mention Bien
          <i>Option communication et médiation culturelle</i>
-          
+
         </p>
       </div>
     </section>
     <section id="portfolio">
       <h4>Portfolio</h4>
+      <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="liolo" data-slug-hash="gOaGxLm" style="height: 365px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Mr Potato CSS Pure">
+        <span>See the Pen <a href="https://codepen.io/liolo/pen/gOaGxLm">
+        Mr Potato CSS Pure</a> by Liora Laulier (<a href="https://codepen.io/liolo">@liolo</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
     </section>
-    
+
     <section id="hobbies">
       <h4>Centres d'intérêt</h4>
       <div class="hobbies_wrap">
@@ -215,7 +293,7 @@
           <img src="./images/game-controller.png" alt="Jeux Vidéo"/>
           <p>Jeux vidéos</p>
         </div>
-        <div class="hobbie"> 
+        <div class="hobbie">
           <img src="./images/open-book.png" alt="Lecture"/>
           <p>Lecture</p>
         </div>
@@ -232,6 +310,6 @@
 
   </main>
 </div>
-  
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
