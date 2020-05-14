@@ -15,8 +15,6 @@ body {
   height: 100vh;
   background: var(--white_color);
   font-family: "Roboto", sans-serif;
-  display: grid;
-  place-items: center;
   color: var(--font_color);
   letter-spacing: 2px;
 }
@@ -415,5 +413,92 @@ p {
 
   .hobbie img {
     width: 17vw;
+  }
+}
+
+@media print {
+  @page {
+    margin: 2cm;
+    font-size: 10px;
+  }
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  p:first-line,
+  div:first-line,
+  li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    list-style: square !important;
+    page-break-inside: avoid;
+  }
+
+  body {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 12px;
+    padding: 0;
+    letter-spacing: 1px;
+  }
+  h4 {
+    font-size: 13px;
+    margin: 0;
+  }
+  header {
+    width: 17cm;
+    top: 0;
+  }
+  header p {
+    width: 17cm;
+  }
+
+  aside {
+    display: none;
+  }
+  section {
+    grid-template-columns: 100%;
+    width: 17cm;
+  }
+
+  .card {
+    grid-template-columns: 10% 80%;
+    grid-template-rows: auto;
+    justify-content: start;
+    padding: 0;
+    width: 17cm;
+  }
+  #skills .card {
+    grid-column-start: 1;
+    width: 6cm;
+    font-size: 12px;
+    border-right: solid 2px;
+  }
+  #xp,
+  #education {
+    grid-column-start: 2;
+    width: 12cm;
+  }
+  .card__name,
+  .card__title {
+    padding: 0 !important;
+    font-weight: bold;
+  }
+  .card__compagny {
+    color: #cccc;
+  }
+
+  #portfolio {
+    display: none !important;
+  }
+  .card_website {
+    display: none !important;
+  }
+  #hobbies {
+    display: none !important;
   }
 }
