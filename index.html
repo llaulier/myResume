@@ -10,35 +10,15 @@
   <title>Liora Laulier</title>
 </head>
 <body>
-  <!--popup-->
+<!--popup-->
 <div class="popup" id="pop">
   <div class="popup__contain">
     <div class="popup__Wrap">
     <div class="contact__Me_col1">
-      <h5 class="card__name">Contactez-moi via ce formulaire</h5>
-      <form action="contact.php" method="post" class="form">
-        <div class="form">
-          <label for="name">Votre nom</label>
-          <input type="text" name="name" id="name" required>
-        </div>
-        <div class="form">
-          <label for="email">Votre mail </label>
-          <input type="email" name="email" id="email" required>
-        </div>
-        <div class="form">
-          <label for="text"></label>
-          <textarea type="text" name="text" id="text"></textarea>
-        </div>
-        <div class="form">
-          <input type="submit" value="Envoyer">
-        </div>
-      </form>
+      <h5 class="card__name">Format pour impression</h5>
+      <a href="fichiers/LioraLaulier_CV.pdf" download="LioraLaulier_CV.pdf">
+      <img src="images/checked.png"alt="document à télécharger" /></a>
     </div>
-      <div class="contact__Me_col2">
-        <h5 class="card__name">...ou via mes coordonnées</h5>
-        <p class="card__compagny">06.25.68.09.33</p>
-        <p class="card__compagny">lioraloche@yahoo.fr</p>
-      </div>
       <a href="#" class="close">x</a>
     </div>
   </div>
@@ -52,18 +32,20 @@
           alt="My Pic"
         />
       <div class="menu__info">
-        <h4><img src="./images/maps-and-flags.png" alt="my position" />Lille, France</h4>
+        <h4><img src="./images/maps-and-flags.png" alt="ma position" />Lille, France</h4>
+        <h4><img src="./images/call.png" alt="mon numéro" />  06.25.68.09.33</h4>
+        <h4><img src="./images/message.png" alt="mon mail" />  lioraloche@yahoo.fr</h4>
       </div>
     </div>
     <div  id="navbar">
     <nav>
       <ul>
         <a href="#skill"><li>
-          <img src="./images/check.png" alt="hoobies"/>
+          <img src="./images/check.png" alt="competences"/>
           <span>Compétences</span>
         </li></a>
         <a href="#xp"><li>
-          <img src="images/tree-silhouette.png" alt="work experiences"/>
+          <img src="images/tree-silhouette.png" alt="experiences"/>
           <span>Expérience</span>
         </li></a>
         <a href="#education"><li>
@@ -80,8 +62,8 @@
         </li></a>
         <div class="openPopup">
           <li>
-          <img src="./images/message.png" alt="hoobies"/>
-          <span>Contactez-moi</span>
+          <img src="./images/interface.png" alt="imprimer cv"/>
+          <span>Télécharger mon CV</span>
           </li>
         </div>
       </ul>
@@ -174,13 +156,35 @@
           <li>React</li>
           <li>Trello</li>
         </ul>
-      </div>
-      <div class="card_website">
-        <div class="button__website">
-          <a href="https://vlilleapp.netlify.app/" target="_blank">
-            <img  class="website__container" src="./images/VLille.png" alt="Aperçu du Site YellowGreen"/>
-        </a>
+        <div class="card_website">
+          <div class="button__website">
+            <a href="https://vlilleapp.netlify.app/" target="_blank">
+              <img  class="website__container" src="./images/VLille.png" alt="Aperçu du site VLille App"/>
+          </a>
+          </div>
         </div>
+      </div>
+
+      <div class="card">
+        <p class="card__name">Hackaton <i>Space Invader</i></p>
+        <p class="card__compagny">29-30 avril 2020</p>
+        <p class="card__article">Hackaton entièrement en remote sur le thème "voyager dans
+          son salon"</p>
+        <ul class="card__article">
+          <li>API Windy</li>
+          <li>HTML 5, CSS 3</li>
+          <li>Media queries</li>
+          <li>React</li>
+          <li>Git et Github</li>
+        </ul>
+        <div class="card_website">
+          <div class="button__website">
+            <a href="hackathon-avril20.netlify.app" target="_blank">
+              <img  class="website__container" src="./images/hackathon.png" alt="Aperçu du site Space Invader"/>
+          </a>
+          </div>
+      </div>
+
       </div>
       <div class="card">
         <p class="card__name">Projet site professionnel <i>Yellowgreen</i></p>
@@ -195,13 +199,14 @@
           <li>Mockup</li>
           <li>Trello</li>
         </ul>
+        <div class="card_website">
+          <div class="button__website">
+            <a href="https://yellowgreen.netlify.app" target="_blank">
+              <img  class="website__container" src="./images/YellowGreen.png" alt="Aperçu du Site YellowGreen"/>
+          </a>
+          </div>
       </div>
-      <div class="card_website">
-        <div class="button__website">
-          <a href="https://yellowgreen.netlify.app" target="_blank">
-            <img  class="website__container" src="./images/YellowGreen.png" alt="Aperçu du Site YellowGreen"/>
-        </a>
-        </div>
+
       </div>
       <div class="card">
         <p class="card__name">Chargée de communication</p>

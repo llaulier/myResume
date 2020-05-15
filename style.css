@@ -55,7 +55,7 @@ a {
   background-color: var(--white_color);
   border-radius: 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   justify-items: center;
   padding: 2rem;
@@ -82,11 +82,11 @@ a {
   font-size: 0.9rem;
 }
 
-.contact__Me_col2 {
+/*.contact__Me_col2 {
   grid-column: 2;
   letter-spacing: 1.2px;
   font-size: 0.9rem;
-}
+}*/
 
 .container {
   width: 100%;
@@ -297,6 +297,10 @@ p {
   margin-bottom: 0.4rem;
 }
 
+.card_website {
+  margin-top: 15px;
+}
+
 .website__container {
   overflow: hidden;
   width: 100%;
@@ -345,20 +349,6 @@ p {
 
   .menu__info {
     display: none;
-  }
-  .popup__Wrap {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    width: 90vw;
-    left: 5%;
-  }
-
-  .contact__Me_col2 {
-    grid-column: 1;
-    margin-top: 25px;
-  }
-  .contact__Me_col1 {
-    grid-column: 1;
   }
   nav {
     padding: 0;
