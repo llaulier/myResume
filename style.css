@@ -15,8 +15,6 @@ body {
   height: 100vh;
   background: var(--white_color);
   font-family: "Roboto", sans-serif;
-  display: grid;
-  place-items: center;
   color: var(--font_color);
   letter-spacing: 2px;
 }
@@ -415,5 +413,94 @@ p {
 
   .hobbie img {
     width: 17vw;
+  }
+}
+
+@media print {
+  @page {
+    margin: 1.5cm;
+    font-size: 10px;
+  }
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  p:first-line,
+  div:first-line,
+  li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    list-style: square !important;
+  }
+
+  body {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 12pt;
+    padding: 0;
+    letter-spacing: 1px;
+  }
+  h4 {
+    font-size: 16pt;
+    margin: 0;
+  }
+  header {
+    width: 17cm;
+    top: 0;
+  }
+  header p {
+    width: 17cm;
+  }
+
+  aside {
+    display: none;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 19cm;
+  }
+
+  section {
+    margin: 0;
+  }
+
+  /*#skill {
+    grid-column: 1 / 2;
+    border-right: solid 2px;
+    font-size: 10pt;
+  }
+  #xp,
+  #education {
+    grid-column: 2/3;
+    padding: 0;
+  }
+  .card {
+    margin: 0;
+  }
+
+  .card__name,
+  .card__title {
+    padding: 0 !important;
+    font-weight: bold;
+  }
+  .card__compagny {
+    color: #cccc;
+  }
+  */
+
+  #portfolio,
+  #hobbies,
+  #hide__print1,
+  #hide__print2 {
+    display: none !important;
+  }
+  .card_website {
+    display: none !important;
   }
 }
