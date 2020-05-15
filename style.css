@@ -299,6 +299,10 @@ p {
   margin-bottom: 0.4rem;
 }
 
+.card_website {
+  margin-top: 15px;
+}
+
 .website__container {
   overflow: hidden;
   width: 100%;
