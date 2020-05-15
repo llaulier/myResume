@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link  rel="icon" href="./images/Office.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@469&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <title>Liora Laulier</title>
+</head>
+<body>
+<!--popup-->
+<div class="popup" id="pop">
+  <div class="popup__contain">
+    <div class="popup__Wrap">
+    <div class="contact__Me_col1">
+      <h5 class="card__name">Print Version</h5>
+      <a href="fichiers/LioraLaulier_CV.pdf" download="LioraLaulier_CV.pdf">
+      <img src="images/checked.png"alt="document à télécharger" /></a>
+    </div>
+      <a href="#" class="close">x</a>
+    </div>
+  </div>
+</div>
+<!--contain-->
+<div class="container">
+  <aside>
+    <div class="menu">
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C4E03AQHgKaLf34VqVg/profile-displayphoto-shrink_200_200/0?e=1594252800&v=beta&t=p4sXfGehISolWyrVKUqd7bzUMinCwajiephHNjVcCIE"
+          alt="My Pic"
+        />
+      <div class="menu__info">
+        <h4><img src="./images/maps-and-flags.png" alt="ma position" />Lille, France</h4>
+        <h4><img src="./images/call.png" alt="mon numéro" />  06.25.68.09.33</h4>
+        <h4><img src="./images/message.png" alt="mon mail" />  lioraloche@yahoo.fr</h4>
+      </div>
+    </div>
+    <div  id="navbar">
+    <nav>
+      <ul>
+        <a href="#skill"><li>
+          <img src="./images/check.png" alt="competences"/>
+          <span>Skills</span>
+        </li></a>
+        <a href="#xp"><li>
+          <img src="images/tree-silhouette.png" alt="experiences"/>
+          <span>Work experience</span>
+        </li></a>
+        <a href="#education"><li>
+          <img src="images/mortarboard.png" alt="education"/>
+          <span>Education</span>
+        </li></a>
+        <a href="#portfolio"><li>
+          <img src="images/suitcase.png" alt="portfolio"/>
+          <span>Portfolio</span>
+        </li></a>
+        <a href="#hobbies"><li id="heart">
+          <img src="./images/heart.png" alt="hoobies"/>
+          <span>Other interests</span>
+        </li></a>
+        <div class="openPopup">
+          <li>
+          <img src="./images/interface.png" alt="imprimer cv"/>
+          <span>Download for print</span>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <div class="social">
+      <a href="https://github.com/llaulier" target="_blank"><img src="./images/github.png" alt="hoobies"/></a>
+      <a href="https://www.linkedin.com/in/liora-laulier-3bb2a0a9/" target="_blank"><img src="./images/linkedin.png" alt="linkedin logo"/></a>
+      <a href="https://twitter.com/LioraLoche" target="_blank"><img src="./images/twitter.png" alt="Twitter logo"/></a>
+    </div>
+    <footer>
+      Icons with Freepik
+    </footer>
+  </div>
+</aside>
+  <main>
+    <header>
+      <h1>Liora Laulier</h1>
+      <p>Web developer Student JavaScript - React - Node.js</p>
+    </header>
+    <section>
+      <div class="card">
+      <p class="card__article">En reconversion professionnelle, je suis actuellement en formation à la Wild Code School et à la recherche d'un stage à partir du mois d'août 2020.
+      </p>
+    </section>
+
+    <section id="skill">
+      <h4>Compétences</h4>
+      <div class="card">
+        <h5 class="card__name">Hard Skills</h5>
+          <p class="card__title">Front-end</p>
+          <ul class="card__article">
+            <li>HTML5, CSS, Javascript/ES6/ES7, React</li></ul>
+            <p class="card__title">Back-end</p>
+          <ul class="card__article">
+            <li>NodeJs, NPM</li></ul>
+            <p class="card__title">Developement tools:</p>
+            <ul class="card__article">
+              <li>GIT, GitHub</li>
+              <li>MacbookPro</li>
+              <li>Terminal</li>
+              <li>Visual Code Studio</li>
+          </ul>
+            <p class="card__title">Work method :</p>
+            <ul class="card__article">
+            <li>Agile, Scrum</li></ul>
+            <p class="card__title">Design :</p>
+            <ul class="card__article">
+              <li>Adobe Photoshop / Illustrator</li>
+              <li>Figma</li>
+              <li>Gimp</li>
+              <li>Material UI</li>
+        </div>
+        <div class="card">
+          <h5 class="card__name">Soft Skills</h5>
+            <ul class="card__article">
+              <li>Aime le travail en équipe</li>
+              <li>Autodidacte</li>
+              <li>Autonome</li>
+              <li>Curieuse</li>
+              <li>Rigoureuse</li>
+              <li>Organisée</li>
+              <li>Persévérante</li>
+              <li>Multi-tasking skill</li>
+            </ul>
+      </div>
+      <div class="card">
+      <h5 class="card__name">Language</h5>
+      <p class="card__title">English :</p>
+      <ul class="card__article"><ul>
+        <li>
+          Fluent (B2 level)</li></ul>
+      </ul>
+      </div>
+    </section>
+
+    <section id="xp">
+      <h4>Work experience</h4>
+      <div class="card">
+        <p class="card__name">Professionnal website project <i>V'Lille App</i></p>
+        <p class="card__compagny">Avril 2020 </p>
+        <p class="card__article">Réalisation d'une web app pour connaître les stations V'Lille (Vélos mis à disposition par la mairie de Lille) à proximité d'une position.</p>
+        <ul class="card__article">
+          <li>Appel d'API</li>
+          <li>Figma</li>
+          <li>Git et Github</li>
+          <li>Map Leaflet</li>
+          <li>Material UI</li>
+          <li>Scrum (4 sprints)</li>
+          <li>Polypane (Browser)</li>
+          <li>React</li>
+          <li>Trello</li>
+        </ul>
+        <div class="card_website">
+          <div class="button__website">
+            <a href="https://vlilleapp.netlify.app/" target="_blank">
+              <img  class="website__container" src="./images/VLille.png" alt="Aperçu du site VLille App"/>
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="card__name">Hackaton <i>Space Invader</i></p>
+        <p class="card__compagny">29-30 avril 2020</p>
+        <p class="card__article">Hackaton entièrement en remote sur le thème "voyager dans
+          son salon"</p>
+        <ul class="card__article">
+          <li>API Windy</li>
+          <li>HTML 5, CSS 3</li>
+          <li>Media queries</li>
+          <li>React</li>
+          <li>Git et Github</li>
+        </ul>
+        <div class="card_website">
+          <div class="button__website">
+            <a href="hackathon-avril20.netlify.app" target="_blank">
+              <img  class="website__container" src="./images/hackathon.png" alt="Aperçu du site Space Invader"/>
+          </a>
+          </div>
+      </div>
+
+      </div>
+      <div class="card">
+        <p class="card__name">Projet site professionnel <i>Yellowgreen</i></p>
+        <p class="card__compagny">Mars 2020</p>
+        <p class="card__article">Réalisation d'un site internet SPA pour une agence de communication.</p>
+        <ul class="card__article">
+          <li>Git et Github</li>
+          <li>HTML 5, CSS 3</li>
+          <li>Javascript et manipulation du DOM</li>
+          <li>Media queries</li>
+          <li>Méthode agile avec 1 checkpoint chaque matin</li>
+          <li>Mockup</li>
+          <li>Trello</li>
+        </ul>
+        <div class="card_website">
+          <div class="button__website">
+            <a href="https://yellowgreen.netlify.app" target="_blank">
+              <img  class="website__container" src="./images/YellowGreen.png" alt="Aperçu du Site YellowGreen"/>
+          </a>
+          </div>
+      </div>
+
+      </div>
+      <div class="card">
+        <p class="card__name">Chargée de communication</p>
+        <p class="card__compagny">2015-2019 Bibliothèque Universitaire Vauban</p>
+        <ul class="card__article">
+          <li>Community Manager</li>
+          <li>Graphism et PAO</li>
+          <li>Formation des étudiants à la recherche informationnelle</li>
+          <li>Participation à la création d'un serious game (dessin,
+            storyboard, scénario...)</li>
+        </p>
+      </div>
+      <div class="card">
+        <p class="card__name">Librarian</p>
+        <p class="card__compagny">2010-2015 Bibliothèque Universitaire Vauban</p>
+        <ul class="card__article">
+          <li>Formation des étudiants et aide à la veille des enseignants</li>
+          <li>Création d'un module de formation sur la recherche documentaire juridique (niveau Licence 1 à Master)</li>
+          <li>Gestion de budget</li>
+          <li>Missions de bibliothèque</li>
+        </ul>
+      </div>
+      <div class="card" id="hide__print2">
+        <p class="card__name">Documentaliste</p>
+        <p class="card__compagny">2012-2013 Deloitte France (Temps partiel)</p>
+        <ul class="card__article">
+          <li>Recherches complexes d’informations financières (recherches sectorielles, biographiques...)</li>
+          <li>Formation nouveaux entrants et réalisation d’un tutoriel sur Factiva</li>
+        </ul>
+      </div>
+    </section>
+    <section id="education">
+      <h4>Formation</h4>
+      <div class="card">
+        <p class="card__name">Wild Code School</p>
+        <p class="card__compagny">Mars-juillet 2020</p>
+        <p class="card__article">
+           Consolidation des connaissances HTML, CSS,
+           Apprentissage de Javascript, Node Js et React en présentiel puis entièrement en remote (Période de confinement)
+        </p>
+      </div>
+      <div class="card">
+        <p class="card__name">Wall street english</p>
+        <p class="card__compagny">Mars-Juillet 2012</p>
+        <p class="card__article">
+          Pratique intensive de l’Anglais (Passage du niveau Waystage 4 à 6)
+        </p>
+      </div>
+      <div class="card">
+        <p class="card__name">EBD – Institut Catholique de Paris</p>
+        <p class="card__compagny">2008-2010</p>
+        <p class="card__article">
+          Diplôme de l’Ecole des Bibliothécaires et des Documentalistes Niveau Master
+        </p>
+      </div>
+      <div class="card">
+        <p class="card__name">UNIVERSITE DE CERGY PONTOISE</p>
+        <p class="card__compagny">2005-2008</p>
+        <p class="card__article">
+          Licence de Lettres Modernes – Mention Bien
+         <i>Option communication et médiation culturelle</i>
+
+        </p>
+      </div>
+    </section>
+    <section id="portfolio">
+      <h4>Portfolio</h4>
+      <div class="card">
+        <p class="card__name">Mr Potato : Dress me up</p>
+        <p class="card__compagny"> voir sur <a href="https://codepen.io/liolo/pen/gOaGxLm">CodePen</a></p>
+      <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="liolo" data-slug-hash="gOaGxLm" style="height: 365px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Mr Potato CSS Pure">
+        <span>See the Pen <a href="https://codepen.io/liolo/pen/gOaGxLm">
+        Mr Potato CSS Pure</a> by Liora Laulier (<a href="https://codepen.io/liolo">@liolo</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section id="hobbies">
+      <h4>Centres d'intérêt</h4>
+      <div class="hobbies_wrap">
+        <div class="hobbie">
+          <img src="./images/ramen.png" alt="Cuisine"/>
+          <p>Cooking</p>
+        </div>
+        <div class="hobbie">
+          <img src="./images/paint-palette.png" alt="Dessin"/>
+          <p>Digital painting</p>
+        </div>
+        <div class="hobbie">
+          <img src="./images/game-controller.png" alt="Jeux Vidéo"/>
+          <p>Video games</p>
+        </div>
+        <div class="hobbie">
+          <img src="./images/open-book.png" alt="Lecture"/>
+          <p>Reading</p>
+        </div>
+        <div class="hobbie">
+          <img  src="./images/headphone.png" alt="Musique"/>
+          <p>Music</p>
+        </div>
+        <div class="hobbie">
+          <img  src="./images/film-reel.png" alt="Film"/>
+          <p>Movies</p>
+        </div>
+    </div>
+    </section>
+  </div>
+  </main>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
