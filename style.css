@@ -418,7 +418,7 @@ p {
 
 @media print {
   @page {
-    margin: 2cm;
+    margin: 1.5cm;
     font-size: 10px;
   }
   *,
@@ -433,7 +433,6 @@ p {
     box-shadow: none !important;
     text-shadow: none !important;
     list-style: square !important;
-    page-break-inside: avoid;
   }
 
   body {
@@ -441,12 +440,12 @@ p {
     bottom: 0;
     right: 0;
     left: 0;
-    font-size: 12px;
+    font-size: 12pt;
     padding: 0;
     letter-spacing: 1px;
   }
   h4 {
-    font-size: 13px;
+    font-size: 16pt;
     margin: 0;
   }
   header {
@@ -460,29 +459,31 @@ p {
   aside {
     display: none;
   }
-  section {
-    grid-template-columns: 100%;
-    width: 17cm;
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 19cm;
   }
 
-  .card {
-    grid-template-columns: 10% 80%;
-    grid-template-rows: auto;
-    justify-content: start;
-    padding: 0;
-    width: 17cm;
+  section {
+    margin: 0;
   }
-  #skills .card {
-    grid-column-start: 1;
-    width: 6cm;
-    font-size: 12px;
+
+  /*#skill {
+    grid-column: 1 / 2;
     border-right: solid 2px;
+    font-size: 10pt;
   }
   #xp,
   #education {
-    grid-column-start: 2;
-    width: 12cm;
+    grid-column: 2/3;
+    padding: 0;
   }
+  .card {
+    margin: 0;
+  }
+
   .card__name,
   .card__title {
     padding: 0 !important;
@@ -491,14 +492,15 @@ p {
   .card__compagny {
     color: #cccc;
   }
+  */
 
-  #portfolio {
+  #portfolio,
+  #hobbies,
+  #hide__print1,
+  #hide__print2 {
     display: none !important;
   }
   .card_website {
-    display: none !important;
-  }
-  #hobbies {
     display: none !important;
   }
 }
