@@ -41,6 +41,13 @@ a {
   z-index: 3;
 }
 
+.eng {
+  position: absolute;
+  right: 10px;
+  width: 23px;
+  height: 23px;
+}
+
 #pop .popup__contain {
   margin: 2rem auto;
   position: relative;
