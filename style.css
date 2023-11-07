@@ -298,7 +298,7 @@ p {
   list-style: none;
   letter-spacing: 1.2px;
   font-size: 0.9rem;
-
+  line-height: 1.5;
   list-style: inside url("./images/right-arrow.svg");
 }
 
