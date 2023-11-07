@@ -280,6 +280,7 @@ aside footer {
   text-transform: uppercase;
   color: var(--complementary_color);
   padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
 }
 
 .card__title {
