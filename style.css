@@ -336,6 +336,12 @@ p {
   text-align: center;
 }
 
+.hobbie:hover {
+  filter: brightness(50%);
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
 .hobbie img {
   width: 9vw;
   height: auto;
