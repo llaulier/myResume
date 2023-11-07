@@ -288,14 +288,17 @@ aside footer {
   padding: 0.3rem;
   letter-spacing: 1.2px;
 }
+.card__article {
+  padding: 0.5rem;
 
+}
 .card__article li,
 p {
   color: var(--font_color);
   list-style: none;
   letter-spacing: 1.2px;
   font-size: 0.9rem;
-  padding: 0.3rem;
+
   list-style: inside url("./images/right-arrow.svg");
 }
 
